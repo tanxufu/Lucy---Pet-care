@@ -89,7 +89,7 @@ button {
     color: #000958;
 }
 
-.section__desc {
+.section-desc {
     margin-top: 24px;
     font-style: 1.6rem;
     line-height: 1.88;
@@ -288,12 +288,18 @@ button {
 
 /* ======================================== About ======================================== */
 .about {
-    margin-top: 207px;
+    margin-top: 138px;
 }
 
 .about__inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    row-gap: 146px;
+    align-items: center;
+}
+
+.about__media {
+    position: relative;
 }
 
 /* about content */
@@ -345,11 +351,212 @@ button {
 .about__check-item::after {
     content: "";
     position: absolute;
-    top: 4px;
+    top: 5px;
     left: 5px;
     width: 12px;
     height: 7px;
     border-left: 2px solid #fff;
     border-bottom: 2px solid #fff;
     rotate: -45deg;
+}
+
+/* about media 01 */
+.about__card {
+    position: absolute;
+    top: 165px;
+    left: 0;
+    width: 136px;
+    padding: 30px 26px;
+    background: #5bd6e2;
+    box-shadow: -15px 26px 48px rgba(85, 240, 255, 0.17);
+    border-radius: 10px;
+}
+
+.about__card-title {
+    font-family: Sora, sans-serif;
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: 1;
+    color: #fff;
+}
+
+.about__card-desc {
+    margin-top: 14px;
+    font-size: 1.4rem;
+    line-height: 1.43;
+    color: #c6f4f9;
+}
+
+.about__card-decor {
+    position: absolute;
+    top: -39px;
+    right: -32px;
+}
+
+.about__img-wrap {
+    position: relative;
+    width: 494px;
+    margin-left: auto;
+}
+
+.about__img-wrap::after {
+    position: absolute;
+    content: "";
+    height: 336px;
+    inset: auto 0 0 0;
+    z-index: -1;
+    background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
+    border-radius: 16px;
+}
+
+.about__img {
+    display: block;
+    width: 450px;
+    margin: 0 auto;
+}
+
+.about__media-decor {
+    position: absolute;
+    z-index: -1;
+    top: 157px;
+    right: -50px;
+}
+
+/* about media 02 */
+.about__img-wrap-bottom {
+    width: 458px;
+    margin-left: 0;
+    border-radius: 18px;
+    border: 2px solid #FFF;
+    background: linear-gradient(180deg, #C6E2FA 0%, #94C2EA 100%);
+    box-shadow: 0px 17px 77px -8px rgba(190, 165, 139, 0.17);
+}
+
+.about__img-wrap-bottom::after {
+    content: none;
+}
+
+.about__img-bottom {
+    width: 100%;
+}
+
+.about__decor-img {
+    position: absolute;
+}
+
+.about__decor-img:nth-child(1) {
+    top: 13px;
+    right: 64px;
+}
+
+.about__decor-img:nth-child(2) {
+    top: -16px;
+    right: 13px;
+}
+
+.about__decor-img:nth-child(3) {
+    top: 33px;
+    right: -21px;
+}
+
+.about__decor-img:nth-child(4) {
+    top: 268px;
+    right: -33px;
+}
+
+.about__decor-img:nth-child(5) {
+    bottom: 150px;
+    right: 19px;
+}
+
+.about__decor-img:nth-child(6) {
+    bottom: -55px;
+    right: -42px;
+}
+
+/* about content 2*/
+.about__desc-bottom {
+    width: 511px;
+    margin-bottom: 50px;
+}
+
+.tab__list {
+    position: relative;
+    display: inline-flex;
+    column-gap: 56px;
+}
+
+.tab__list::after,
+.tab__item--active::after,
+.tab__content-more::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    opacity: 0.07;
+    background: #FF5B2E;
+    border-radius: 1px;
+}
+
+.tab__item--active::after {
+    width: 95px;
+    opacity: 1;
+}
+
+.tab__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    padding-bottom: 12px;
+    cursor: pointer;
+}
+
+.tab__icon {
+    width: 20px;
+}
+
+.tab__title {
+    font-family: Sora, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+    color: #48496A;
+}
+
+.tab__contents {
+    padding-top: 36px;
+}
+
+.tab__content-item {
+    display: none;
+}
+
+.tab__content-item--active {
+    display: block;
+}
+
+.tab__content-desc {
+    width: 391px;
+    font-size: 1.4rem;
+    line-height: 1.71;
+    color: #656689;
+}
+
+.tab__content-more {
+    position: relative;
+    display: inline-block;
+    margin-top: 32px;
+    padding-bottom: 5px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+    color: #FF5D31;
+}
+
+.tab__content-more::after {
+    opacity: 1;
+    height: 1.5px;
 }
