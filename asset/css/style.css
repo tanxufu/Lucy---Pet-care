@@ -1164,3 +1164,124 @@ button {
     line-height: 1.71;
     color: #656689;
 }
+
+/* ======================================== Footer ======================================== */
+.footer {
+    margin-top: 53px;
+    background: linear-gradient(to right, #fff6ed 42%, transparent 42%);
+}
+
+.footer__inner {
+    display: flex;
+}
+
+.footer__left {
+    width: 42%;
+    padding: 114px 0 148px 0;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 34px 0 68px 0;
+    width: 268px;
+    height: 46px;
+    border: 1px solid rgba(255, 91, 46, 0.25);
+    border-radius: 99px;
+    background: #fff;
+}
+
+.search-form__input {
+    width: 100%;
+    height: 100%;
+    padding: 0 22px;
+    font-size: 1.4rem;
+    border: none;
+    outline: none;
+    border-radius: inherit;
+}
+
+.search-form__input::placeholder {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.16;
+    color: #656689;
+}
+
+.search-form__submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 46px;
+    height: 46px;
+    margin-right: -1px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background: #ff5b2e;
+    box-shadow: 0 15px 28px -7px rgba(255, 91, 46, 0.3);
+}
+
+.search-form__submit:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.footer__heading {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.11;
+    color: #000958;
+}
+
+.social__list {
+    display: flex;
+    column-gap: 16px;
+    margin-top: 16px;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.footer__right {
+    flex: 1;
+    padding: 52px 0 48px 0;
+}
+
+.footer__row {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 58px 137px;
+    margin-left: 129px;
+}
+
+.footer__list {
+    margin-top: 14px;
+}
+
+.footer__link {
+    font-size: 1.4rem;
+    line-height: 2;
+    color: #656689;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__copyright {
+    margin: 52px 0 0 22px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.16;
+    color: #656689;
+}
